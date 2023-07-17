@@ -1,0 +1,25 @@
+uArcher
+18A0PYCZURBVJDQE
+PEEK
+
+Return address at:
+5FDCD0
+
+EBP:
+5FDCCC
+
+BUFFER AT (Source):
+5F9D20
+
+BUFFER COPIED TO AT (Destination):
+5FDCD8 == EBP+12
+
+args we want to push for send_commands_to_server:
+arg1 = socket ([ebp+8])
+arg2 = 7
+arg3 = some_buffer which scanf be called before to fill it with the command for PEEK
+arg4 = address of offset Buffer for server communication (0x62508080)
+arg5 = 0
+
+ESP when need to get socket = 5FD8C0
+Old EBP = 7CFD5F00 (little endian)
